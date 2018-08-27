@@ -22,7 +22,7 @@ go install
 
 ## Generate go version contract ##
 Instead of operating abigen by [this tutorial](https://www.cnblogs.com/baizx/p/7469125.html) which never succeed for me,  
-[this one](https://hk.saowen.com/a/16e09b1d3e7f3099ac7b7ce9f891e96d8588c6d563c6dab8e344dbdff397cc73) is recommanded.
+[another tutorial](https://hk.saowen.com/a/16e09b1d3e7f3099ac7b7ce9f891e96d8588c6d563c6dab8e344dbdff397cc73) is recommended.
 First, use solcjs(after npm install -g solc) to generate abi and bin.
 ```
 solcjs sol/FixedSupplyToken.sol -o tmp/ctrabi --abi 
