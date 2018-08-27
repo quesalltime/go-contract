@@ -1,0 +1,6 @@
+# Ignore
+vendor/*
+tmp/*
+
+# Allow
+!vendor/vendor.json
