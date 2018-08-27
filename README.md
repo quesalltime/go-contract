@@ -22,7 +22,8 @@ go install
 
 ## Generate go version contract ##
 Instead of operating abigen by [this tutorial](https://www.cnblogs.com/baizx/p/7469125.html) which never succeed for me,  
-[another tutorial](https://hk.saowen.com/a/16e09b1d3e7f3099ac7b7ce9f891e96d8588c6d563c6dab8e344dbdff397cc73) is recommended.
+[another tutorial](https://hk.saowen.com/a/16e09b1d3e7f3099ac7b7ce9f891e96d8588c6d563c6dab8e344dbdff397cc73) is recommended.  
+
 First, use solcjs(after npm install -g solc) to generate abi and bin.
 ```
 solcjs sol/FixedSupplyToken.sol -o tmp/ctrabi --abi 
@@ -30,7 +31,7 @@ solcjs sol/FixedSupplyToken.sol -o tmp/ctrabi --abi
 solcjs sol/FixedSupplyToken.sol -o tmp/ctrbin --bin
 ```
 
-Then use abigen with abi and bin above to get contract wrapper in GO.
+Then use abigen with abi and bin above to get contract wrapper in GO.  
 Be aware of that --pkg not means which directory the contract wrapper file will be placed,  
 it menas whcih package the contract wrapper will belong to. 
 ```
